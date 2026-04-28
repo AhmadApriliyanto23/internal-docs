@@ -4,6 +4,14 @@ Kumpulan masalah yang sering terjadi pada aplikasi Anjungan beserta langkah peny
 
 ---
 
+## Daftar Isi {#daftar-isi}
+
+- [Issue 1 — IP Server Berubah](#issue-1-ip-server-berubah-paling-sering-terjadi)
+- [Issue 2 — Browser Bukan Mozilla Firefox 70.0.1](#issue-2-browser-bukan-mozilla-firefox-7001)
+- [Panduan Troubleshoot Lengkap](#panduan-troubleshoot-lengkap-urutan-pengecekan)
+
+---
+
 ## Issue 1 — IP Server Berubah (Paling Sering Terjadi)
 
 ### Gejala
@@ -36,6 +44,8 @@ IP server berubah (misal setelah restart server atau perubahan jaringan), sement
 Selalu isi field `last_updated` dengan tanggal hari ini agar mudah ditracking kapan terakhir diubah.
 :::
 
+<a href="#daftar-isi" style="display:inline-block;margin-top:8px;font-size:13px;color:var(--vp-c-brand-1);text-decoration:none">↑ Kembali ke Daftar Isi</a>
+
 ---
 
 ## Issue 2 — Browser Bukan Mozilla Firefox 70.0.1
@@ -60,6 +70,8 @@ Jangan pernah update Firefox di device anjungan tanpa konfirmasi terlebih dahulu
 4. Setelah install, pastikan **auto-update Firefox dinonaktifkan**:
    - Buka Firefox → menu ☰ → **Options** → **General**
    - Pada bagian **Firefox Updates**, pilih **"Never check for updates"**
+
+<a href="#daftar-isi" style="display:inline-block;margin-top:8px;font-size:13px;color:var(--vp-c-brand-1);text-decoration:none">↑ Kembali ke Daftar Isi</a>
 
 ---
 
@@ -107,6 +119,8 @@ Jika semua langkah di atas sudah dilakukan dan masih error, hubungi **Ahmad Apri
 - Screenshot error
 - Hasil log dari langkah 5
 - Waktu kejadian
+
+<a href="#daftar-isi" style="display:inline-block;margin-top:8px;font-size:13px;color:var(--vp-c-brand-1);text-decoration:none">↑ Kembali ke Daftar Isi</a>
 
 ---
 

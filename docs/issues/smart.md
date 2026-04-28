@@ -4,6 +4,16 @@ Panduan pengelolaan konten dan konfigurasi aplikasi Smart melalui FStore. Seluru
 
 ---
 
+## Daftar Isi {#daftar-isi}
+
+- [Daftar Dokumen & Cara Memperbarui via FStore](#daftar-dokumen-cara-memperbarui-via-fstore)
+- [Daftar Video & Cara Memperbarui via FStore](#daftar-video-cara-memperbarui-via-fstore)
+- [Gambar Homepage Smart](#gambar-homepage-smart)
+- [Cara Menambahkan Menu di Setiap Role User](#cara-menambahkan-menu-di-setiap-role-user)
+- [Ringkasan — Mana yang Perlu Diubah di FStore?](#ringkasan-mana-yang-perlu-diubah-di-fstore)
+
+---
+
 ## Daftar Dokumen & Cara Memperbarui via FStore
 
 ### Struktur Data Dokumen di FStore
@@ -43,6 +53,8 @@ Collection: `smart_documents`
 
 Ubah field `is_active` menjadi `false`. Dokumen tidak akan muncul di aplikasi tapi data tetap tersimpan.
 
+<a href="#daftar-isi" style="display:inline-block;margin-top:8px;font-size:13px;color:var(--vp-c-brand-1);text-decoration:none">↑ Kembali ke Daftar Isi</a>
+
 ---
 
 ## Daftar Video & Cara Memperbarui via FStore
@@ -80,6 +92,8 @@ Pastikan file di Google Drive sudah di-share dengan setting **"Anyone with the l
 
 Field `order` menentukan urutan tampil video di aplikasi. Angka kecil = tampil lebih awal. Atur ulang angka `order` di setiap dokumen untuk mengubah urutan.
 
+<a href="#daftar-isi" style="display:inline-block;margin-top:8px;font-size:13px;color:var(--vp-c-brand-1);text-decoration:none">↑ Kembali ke Daftar Isi</a>
+
 ---
 
 ## Gambar Homepage Smart
@@ -109,6 +123,8 @@ Field `order` menentukan urutan tampil video di aplikasi. Angka kecil = tampil l
 **Preview gambar sebelum disimpan:**
 Paste URL di browser untuk memastikan gambar muncul dengan benar sebelum update ke FStore.
 
+<a href="#daftar-isi" style="display:inline-block;margin-top:8px;font-size:13px;color:var(--vp-c-brand-1);text-decoration:none">↑ Kembali ke Daftar Isi</a>
+
 ---
 
 ## Cara Menambahkan Menu di Setiap Role User
@@ -117,6 +133,8 @@ Paste URL di browser untuk memastikan gambar muncul dengan benar sebelum update 
 Bagian ini sedang disiapkan oleh **Ahmad Apriliyanto**.  
 Akan diisi setelah proses konfigurasi role selesai didokumentasikan.
 :::
+
+<a href="#daftar-isi" style="display:inline-block;margin-top:8px;font-size:13px;color:var(--vp-c-brand-1);text-decoration:none">↑ Kembali ke Daftar Isi</a>
 
 ---
 

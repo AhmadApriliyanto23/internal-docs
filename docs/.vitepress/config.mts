@@ -12,7 +12,7 @@ export default defineConfig({
       { text: 'Daftar Aplikasi', link: '/apps/daftar-aplikasi' },
       { text: 'Issue', link: '/issues/anjungan' },
     ],
-
+ 
     sidebar: [
       {
         text: 'Mulai',
@@ -25,8 +25,10 @@ export default defineConfig({
         text: 'Aplikasi',
         items: [
           { text: 'Daftar Aplikasi', link: '/apps/daftar-aplikasi' },
-          { text: 'Detail — Flutter', link: '/apps/detail-flutter' },
-          { text: 'Detail — Update via SSH', link: '/apps/detail-ssh' },
+          { text: 'Anjungan', link: '/apps/anjungan' },
+          { text: 'Smart', link: '/apps/smart' },
+          { text: 'Flutter — Build & Deploy', link: '/apps/detail-flutter' },
+          { text: 'Update via SSH', link: '/apps/detail-ssh' },
         ],
       },
       {
@@ -37,23 +39,23 @@ export default defineConfig({
         ],
       },
     ],
-
+ 
     footer: {
       message: 'Dokumentasi Internal — Dilarang disebarkan ke pihak luar.',
       copyright: 'Dibuat oleh Ahmad Apriliyanto — Frontend Programmer',
     },
-
+ 
     search: {
       provider: 'local',
     },
-
+ 
     editLink: {
-      pattern: 'https://github.com/ahmadapriliyanto23.github.io/internal-docs/edit/main/docs/:path',
+      pattern: 'https://github.com/USERNAME/REPO/edit/main/docs/:path',
       text: 'Edit halaman ini di GitHub',
     },
-
+ 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/ahmadapriliyanto23.github.io/internal-docs' },
+      { icon: 'github', link: 'https://github.com/USERNAME/REPO' },
     ],
   },
 })

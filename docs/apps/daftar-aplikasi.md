@@ -1,96 +1,35 @@
 # Daftar Aplikasi
 
-Inventori lengkap seluruh aplikasi frontend yang dikelola tim. Perbarui halaman ini setiap kali ada aplikasi baru atau perubahan informasi teknis.
+Inventori lengkap seluruh aplikasi frontend yang dikelola tim.
 
 ---
 
-## Cara Menambahkan Gambar dari Google Drive
+## Semua Aplikasi
 
-Untuk menampilkan screenshot atau gambar dari Google Drive di halaman ini, ubah format link terlebih dahulu:
-
-**Link biasa dari Drive:**
-```
-https://drive.google.com/file/d/FILE_ID/view
-```
-
-**Ubah menjadi format embed:**
-```
-https://drive.google.com/uc?export=view&id=FILE_ID
-```
-
-**Lalu gunakan di Markdown:**
-```markdown
-![Nama Gambar](https://drive.google.com/uc?export=view&id=FILE_ID)
-```
+| Aplikasi | Domain | Framework | Repository | SSH Remote | Status | Dokumentasi |
+|----------|--------|-----------|------------|------------|--------|-------------|
+| **Anjungan** | *(isi domain)* | *(isi framework)* | *(isi repo)* | *(isi SSH)* | Production | [Lihat →](/apps/anjungan) |
+| **Smart** | *(isi domain)* | *(isi framework)* | *(isi repo)* | *(isi SSH)* | Production | [Lihat →](/apps/smart) |
 
 ---
 
-## Template Kartu Aplikasi
+## Shortcut ke Dokumentasi Aplikasi
 
-Salin template berikut untuk setiap aplikasi baru:
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:16px">
 
-```markdown
-## Nama Aplikasi
+<a href="/apps/anjungan" style="display:block;padding:16px 20px;border:1px solid var(--vp-c-divider);border-radius:10px;text-decoration:none;transition:border-color 0.2s,box-shadow 0.2s" onmouseover="this.style.borderColor='var(--vp-c-brand-1)';this.style.boxShadow='0 2px 12px rgba(0,0,0,0.08)'" onmouseout="this.style.borderColor='var(--vp-c-divider)';this.style.boxShadow='none'">
+  <div style="font-size:24px;margin-bottom:8px">🖥️</div>
+  <div style="font-weight:600;color:var(--vp-c-text-1);margin-bottom:4px">Anjungan</div>
+  <div style="font-size:13px;color:var(--vp-c-text-2)">Instalasi, konfigurasi IP, troubleshoot</div>
+</a>
 
-| Info | Detail |
-|------|--------|
-| **Domain** | https://domain-aplikasi.com |
-| **Framework** | Flutter 3.x |
-| **Versi** | 1.0.0 |
-| **Repository** | https://github.com/org/repo |
-| **SSH Remote** | user@192.168.x.x |
-| **Status** | Production |
+<a href="/apps/smart" style="display:block;padding:16px 20px;border:1px solid var(--vp-c-divider);border-radius:10px;text-decoration:none;transition:border-color 0.2s,box-shadow 0.2s" onmouseover="this.style.borderColor='var(--vp-c-brand-1)';this.style.boxShadow='0 2px 12px rgba(0,0,0,0.08)'" onmouseout="this.style.borderColor='var(--vp-c-divider)';this.style.boxShadow='none'">
+  <div style="font-size:24px;margin-bottom:8px">📲</div>
+  <div style="font-weight:600;color:var(--vp-c-text-1);margin-bottom:4px">Smart</div>
+  <div style="font-size:13px;color:var(--vp-c-text-2)">Instalasi, manajemen konten, role user</div>
+</a>
 
-**Fungsi:** Deskripsi singkat apa yang dilakukan aplikasi ini.
-
-**Cara Instalasi:**
-1. ...
-2. ...
-```
-
----
-
-## Anjungan
-
-| Info | Detail |
-|------|--------|
-| **Domain** | *(isi domain)* |
-| **Framework** | *(isi framework & versi)* |
-| **Repository** | *(isi URL repo)* |
-| **SSH Remote** | *(isi alamat SSH)* |
-| **Status** | Production |
-
-**Fungsi:** Aplikasi kiosk/anjungan yang berjalan di browser Mozilla Firefox 70.0.1. *(Tambahkan deskripsi lebih detail di sini.)*
-
-**Screenshot:**
-
-![Tampilan Anjungan](https://drive.google.com/uc?export=view&id=GANTI_DENGAN_FILE_ID_DRIVE)
-
-> 💡 Ganti `GANTI_DENGAN_FILE_ID_DRIVE` dengan ID file screenshot dari Google Drive kamu.
-
----
-
-## Smart
-
-| Info | Detail |
-|------|--------|
-| **Domain** | *(isi domain)* |
-| **Framework** | *(isi framework & versi)* |
-| **Repository** | *(isi URL repo)* |
-| **SSH Remote** | *(isi alamat SSH)* |
-| **Status** | Production |
-
-**Fungsi:** *(Isi deskripsi fungsi aplikasi Smart di sini.)*
-
-**Screenshot:**
-
-![Tampilan Smart](https://drive.google.com/uc?export=view&id=GANTI_DENGAN_FILE_ID_DRIVE)
-
----
-
-## *(Tambahkan Aplikasi Lain Di Sini)*
-
-Salin template di atas dan isi sesuai data aplikasi.
+</div>
 
 ---
 
