@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  base: '/',
+  base: '/frontend-docs/',
   title: 'Frontend Dev Wiki',
   description: 'Dokumentasi internal aplikasi frontend — Ahmad Apriliyanto',
   lang: 'id-ID',
