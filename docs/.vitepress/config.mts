@@ -1,10 +1,10 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
+  base: '/',
   title: 'Frontend Dev Wiki',
   description: 'Dokumentasi internal aplikasi frontend — Ahmad Apriliyanto',
   lang: 'id-ID',
-
   themeConfig: {
     siteTitle: 'Frontend Dev Wiki',
     nav: [
@@ -48,12 +48,12 @@ export default defineConfig({
     },
 
     editLink: {
-      pattern: 'https://github.com/USERNAME/REPO/edit/main/docs/:path',
+      pattern: 'https://github.com/ahmadapriliyanto23.github.io/internal-docs/edit/main/docs/:path',
       text: 'Edit halaman ini di GitHub',
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/USERNAME/REPO' },
+      { icon: 'github', link: 'https://github.com/ahmadapriliyanto23.github.io/internal-docs' },
     ],
   },
 })

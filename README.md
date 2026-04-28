@@ -30,7 +30,7 @@ Semua halaman ada di folder `docs/` dalam format Markdown (`.md`).
 Wiki ini di-deploy otomatis ke GitHub Pages setiap kali ada push ke branch `main`.
 
 Setelah push, tunggu 1–2 menit lalu buka:
-`https://USERNAME.github.io/NAMA-REPO/`
+`https://ahmadapriliyanto23.github.io/internal-docs/`
 
 ## Setup Awal GitHub Pages (Sekali Saja)
 

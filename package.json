@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Dokumentasi internal aplikasi frontend",
   "scripts": {
-    "dev": "vitepress dev docs",
+    "dev": "vitepress dev docs --port 3333",
     "build": "vitepress build docs",
     "preview": "vitepress preview docs"
   },
