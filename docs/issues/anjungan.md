@@ -6,8 +6,8 @@ Kumpulan masalah yang sering terjadi pada aplikasi Anjungan beserta langkah peny
 
 ## Daftar Isi {#daftar-isi}
 
-- [Issue 1 — IP Server Berubah](#issue-1-ip-server-berubah-paling-sering-terjadi)
-- [Issue 2 — Browser Bukan Mozilla Firefox 70.0.1](#issue-2-browser-bukan-mozilla-firefox-7001)
+- [Issue 1 — IP Server Berubah](#issue-1-—-ip-server-berubah-paling-sering-terjadi)
+- [Issue 2 — Browser Bukan Mozilla Firefox 70.0.1](#issue-2-—-browser-bukan-mozilla-firefox-70-0-1)
 - [Panduan Troubleshoot Lengkap](#panduan-troubleshoot-lengkap-urutan-pengecekan)
 
 ---
@@ -53,9 +53,9 @@ berikut object jsonnya
 10. upload file config.json yang terbaru
 
 
-::: melihat perubahan
-data fstore yang diupdate perlu dipancing dulu untuk melihat upadtenya diakases di **[API CONFIG](http://assets.rsabhk.co.id/anjungan/config.json)**
-kemduian di mesin anjungan yang error perlu direfresh dahulu
+::: warning melihat perubahan
+lihat update jsonnya bisa diakases di **[API CONFIG](http://assets.rsabhk.co.id/anjungan/config.json)**
+kemudian di mesin anjungan yang error perlu direfresh dahulu
 :::
 
 <a href="#daftar-isi" style="display:inline-block;margin-top:8px;font-size:13px;color:var(--vp-c-brand-1);text-decoration:none">↑ Kembali ke Daftar Isi</a>
