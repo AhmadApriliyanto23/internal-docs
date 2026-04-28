@@ -5,6 +5,7 @@ export default defineConfig({
   title: 'Frontend Dev Wiki',
   description: 'Dokumentasi internal aplikasi frontend — Ahmad Apriliyanto',
   lang: 'id-ID',
+  ignoreDeadLinks: true,
   themeConfig: {
     siteTitle: 'Frontend Dev Wiki',
     nav: [

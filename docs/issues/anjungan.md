@@ -20,28 +20,42 @@ Kumpulan masalah yang sering terjadi pada aplikasi Anjungan beserta langkah peny
 - Data tidak muncul
 
 ### Penyebab
-IP server berubah (misal setelah restart server atau perubahan jaringan), sementara konfigurasi di FStore masih menggunakan IP lama.
+IP desktop berubah (misal setelah restart server, perubahan jaringan dari lan ke wifi, mati listrik), sementara konfigurasi di FStore masih menggunakan IP lama.
 
 ### Solusi — Update IP di FStore
 
-1. Login ke **FStore** menggunakan akun admin
-2. Masuk ke **Collection** → cari collection `config` (atau nama collection yang sudah ditentukan)
-3. Buka dokumen konfigurasi IP, biasanya bernama `ip_server` atau `app_config`
-4. Update field `ip_address` dengan IP terbaru:
-
+1. Login ke **[FStore](http://assets.rsabhk.lan:5000/)** menggunakan akun admin
+2. Masuk ke **assets** → cari collection `anjungan`
+3. Download file config.json
+4. buka config.json dengan text editor (vscode)
+berikut object jsonnya
 ```json
 {
-  "ip_address": "192.168.x.x",
-  "port": "3000",
-  "last_updated": "2024-01-15"
-}
+      "ipPlatform": "172.16.111.205",
+      "ipPrinter": "172.16.111.205",
+      "name": "ALAMANDA 1",
+      "port": "usb",
+      "isFinger": true
+  }
 ```
+```
+`iplatform` => IP PC anjungan
+`ipPrinter` => IP POS Printer
+`name` => lokasi anjungan
+`port` => mendeteksi apakah printernya `USB` atau `ip`
+`isFinger` => mendeteksi PC mendukung finger atau tidak
+```
+5. cari ip milik PC (`ipPlatform`) jika sudah ada tinggal sesuaikan `ipPrinter`
+6. jika belum ada silahkan tambah satu object baru dipaling bawah sesuai ip terbaru
+7. simpan perubahan
+8. kembali ke FStore didirektori sebelumnya
+9. hapus file config.json 
+10. upload file config.json yang terbaru
 
-5. Klik **Save / Update**
-6. Refresh aplikasi Anjungan — tidak perlu deploy ulang
 
-::: tip
-Selalu isi field `last_updated` dengan tanggal hari ini agar mudah ditracking kapan terakhir diubah.
+::: melihat perubahan
+data fstore yang diupdate perlu dipancing dulu untuk melihat upadtenya diakases di **[API CONFIG](http://assets.rsabhk.co.id/anjungan/config.json)**
+kemduian di mesin anjungan yang error perlu direfresh dahulu
 :::
 
 <a href="#daftar-isi" style="display:inline-block;margin-top:8px;font-size:13px;color:var(--vp-c-brand-1);text-decoration:none">↑ Kembali ke Daftar Isi</a>
@@ -93,7 +107,7 @@ Pastikan versi = 70.0.1
 
 **Langkah 3 — Cek & update konfigurasi IP di FStore**
 ```
-Login FStore → Collection config → Cek ip_address
+Login FStore → Collection anjungan → Cek config.json
 Bandingkan dengan IP server saat ini
 Update jika berbeda
 ```
@@ -104,12 +118,6 @@ Firefox → menu ☰ → Options → Privacy & Security
 → Cookies and Site Data → Clear Data
 Centang keduanya → Clear
 Refresh aplikasi
-```
-
-**Langkah 5 — Cek log server via SSH**
-```bash
-ssh user@ip-server
-pm2 logs nama-aplikasi --lines 50
 ```
 
 Cari baris error di log dan sesuaikan penanganannya.

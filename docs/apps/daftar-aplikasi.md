@@ -8,9 +8,9 @@ Inventori lengkap seluruh aplikasi frontend yang dikelola tim.
 
 | Aplikasi | Domain | Framework | Repository | SSH Remote | Status | Dokumentasi |
 |----------|--------|-----------|------------|------------|--------|-------------|
-| **Anjungan** | *(isi domain)* | *(isi framework)* | *(isi repo)* | *(isi SSH)* | Production | [Lihat →](/apps/anjungan) |
-| **Smart** | *(isi domain)* | *(isi framework)* | *(isi repo)* | *(isi SSH)* | Production | [Lihat →](/apps/smart) |
-
+| **Smart** | *(https://smart.rsabhk.co.id/)* | *(angular js)* | *(isi repo)* | *(isi SSH)* | Production | [Lihat →](/apps/smart) |
+| **Anjungan** | *(https://anjungan.rsabhk.co.id/)* | *(REACT18)* | *(isi repo)* | *(ssh://userdev@172.16.55.31:/volume1/git/new/fe-anjungan.git)* | Production | [Lihat →](/apps/anjungan) |
+| **Vedika** | *(https://vedika.rsabhk.co.id/)* | *(REACT18)* | *(isi repo)* | *(ssh://userdev@172.16.55.31:/volume1/git/fe-vedika.git)* | Production | [Lihat →](/apps/vedika) |
 ---
 
 ## Shortcut ke Dokumentasi Aplikasi
