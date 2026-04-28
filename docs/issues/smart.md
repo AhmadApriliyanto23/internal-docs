@@ -75,30 +75,7 @@ Stepnya sama dengan upload file dokumen dan cara mendafatkannya di json harus se
 
 ## Gambar Homepage Smart
 
-### Lokasi Konfigurasi
-- **Collection:** `smart_config`
-- **Field:** `homepage_image`
 
-### Cara Memperbarui Gambar Homepage
-
-1. Upload gambar baru ke **Firebase Storage** atau **Google Drive**
-
-   **Jika pakai Google Drive:**
-   - Upload gambar ke folder yang sudah ditentukan di Drive
-   - Klik kanan → **Share** → **Anyone with the link** → **Viewer**
-   - Salin link, ubah formatnya:
-     ```
-     Sebelum: https://drive.google.com/file/d/FILE_ID/view
-     Sesudah: https://drive.google.com/uc?export=view&id=FILE_ID
-     ```
-
-2. Login ke **FStore** → Collection `smart_config`
-3. Buka dokumen konfigurasi → Edit field `homepage_image`
-4. Paste URL gambar yang sudah diformat
-5. Klik **Update**
-
-**Preview gambar sebelum disimpan:**
-Paste URL di browser untuk memastikan gambar muncul dengan benar sebelum update ke FStore.
 
 <a href="#daftar-isi" style="display:inline-block;margin-top:8px;font-size:13px;color:var(--vp-c-brand-1);text-decoration:none">↑ Kembali ke Daftar Isi</a>
 
