@@ -106,7 +106,26 @@ Paste URL di browser untuk memastikan gambar muncul dengan benar sebelum update 
 
 ## Cara Menambahkan Menu di Setiap Role User
 
-###
+### Menambahkan menu pada sidemenu
+1. buka code smart melalui `ssh` masing-masing
+2. akses direktori ***app*** → `data` → `GetSideMenu`
+3. cari file berdasarkan role yang akan di ubah/tambah menunya.
+4. simpan perubahan
+5. lakukan commit
+6. pull hasil kerjanya ke branch `master2`
+
+### Cara deploy smart di ssh
+1. akses ssh
+2. pastikan direktori terminal ``/media/dev/[NAMA]/frontend-smart``
+3. setelah posisinya di branch master2
+4. jalankan perintah
+```
+git fetch
+git pull //dari branch yang dikerjaan
+```
+5. setelah berhasil, silahkana naik kedirektori ``/media/dev/[NAMA]/`` cukup dengan menjalakan terminal `cd..`
+6. setelah itu silahkan jalankan perintah ``../deploy/deploy.sh`` tunggu sampai diminta password, setelah mengisi password project akan direbuild lagi
+
 
 <a href="#daftar-isi" style="display:inline-block;margin-top:8px;font-size:13px;color:var(--vp-c-brand-1);text-decoration:none">↑ Kembali ke Daftar Isi</a>
 
