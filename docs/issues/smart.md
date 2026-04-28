@@ -4,6 +4,10 @@ Panduan pengelolaan konten dan konfigurasi aplikasi Smart melalui FStore. Seluru
 
 ---
 
+::: warning
+Untuk `upload file` dan `upload vidio` tidak ada aksi pengkodingan apapun pada smart
+:::
+
 ## Daftar Isi {#daftar-isi}
 
 - [Daftar Dokumen & Cara Memperbarui via FStore](#daftar-dokumen-cara-memperbarui-via-fstore)
@@ -18,40 +22,30 @@ Panduan pengelolaan konten dan konfigurasi aplikasi Smart melalui FStore. Seluru
 
 ### Struktur Data Dokumen di FStore
 
-Collection: `smart_documents`
+Collection: `pemberitahuan`
 
 ```json
 {
-  "id": "doc_001",
-  "title": "Nama Dokumen",
-  "description": "Deskripsi singkat dokumen",
-  "file_url": "https://drive.google.com/uc?export=view&id=FILE_ID",
-  "category": "kategori",
-  "is_active": true,
-  "updated_at": "2024-01-15"
-}
+    "path": "https://assets.rsabhk.co.id/smart/documents/SE Jam Kerja Bulan Ramadan 1447 H RSABHK.pdf", //path dokumen
+    "fileName": "SE Jam Kerja Bulan Ramadan 1447 H RSABHK", //judul dokumen
+    "new": true, //flag untuk dekteksi upload terbaru
+    "created_at":"2026-02-19"  //Tanggal diisi tanggal upload
+},
 ```
 
-### Cara Memperbarui Dokumen yang Ada
-
+### Upload file dokumen di FStore
 1. Login ke **FStore**
-2. Masuk ke **Collection** → `smart_documents`
-3. Cari dokumen berdasarkan `title` atau `id`
-4. Klik dokumen → **Edit**
-5. Update field yang perlu diubah (misalnya `file_url` jika file diganti)
-6. Klik **Update** — perubahan langsung aktif di aplikasi
+2. Masuk ke **Collection** → `smart` → `document`
+3. Upload file dengan cara klik navbar `upload` → `upload skip`
 
-### Cara Menambah Dokumen Baru
-
-1. Login ke **FStore** → Collection `smart_documents`
-2. Klik **Add Document**
-3. Isi semua field sesuai struktur di atas
-4. Set `is_active: true` agar dokumen muncul di aplikasi
-5. Klik **Save**
-
-### Cara Menonaktifkan Dokumen (Tanpa Menghapus)
-
-Ubah field `is_active` menjadi `false`. Dokumen tidak akan muncul di aplikasi tapi data tetap tersimpan.
+### Cara Memperbarui Dokumen & Menambah Dokumen Baru
+1. Tetap di direktori setelah upload file cari file pemberitahuan.json
+3. Download file `pemberitahuan.json`
+4. Buka file `pemberitahuan.json` dengan text editor (vscode)
+5. simpan perubahan
+6. kembali ke FStore didirektori sebelumnya
+7. hapus file pemberitahuan.json yang existing
+8. upload file pemberitahuan.json yang terbaru
 
 <a href="#daftar-isi" style="display:inline-block;margin-top:8px;font-size:13px;color:var(--vp-c-brand-1);text-decoration:none">↑ Kembali ke Daftar Isi</a>
 
@@ -61,36 +55,19 @@ Ubah field `is_active` menjadi `false`. Dokumen tidak akan muncul di aplikasi ta
 
 ### Struktur Data Video di FStore
 
-Collection: `smart_videos`
+Collection: `smart vidio`
 
 ```json
 {
-  "id": "vid_001",
-  "title": "Judul Video",
-  "description": "Deskripsi video",
-  "video_url": "https://link-ke-video.com",
-  "thumbnail_url": "https://drive.google.com/uc?export=view&id=FILE_ID",
-  "duration": "05:30",
-  "is_active": true,
-  "order": 1,
-  "updated_at": "2024-01-15"
-}
+  "title": "Perubahan Budaya Kerja Kementerian Kesehatan",
+  "src": "https://assets.rsabhk.co.id/smart/vidio/Sequence 02_1.mp4"
+},
 ```
 
 ### Cara Memperbarui Video
 
-Sama seperti dokumen — cari di collection `smart_videos`, edit field yang perlu diubah, simpan.
-
-::: tip Tips Thumbnail dari Google Drive
-Untuk thumbnail, gunakan format URL:
-`https://drive.google.com/uc?export=view&id=FILE_ID`
-
-Pastikan file di Google Drive sudah di-share dengan setting **"Anyone with the link can view"**.
-:::
-
-### Urutan Tampil Video
-
-Field `order` menentukan urutan tampil video di aplikasi. Angka kecil = tampil lebih awal. Atur ulang angka `order` di setiap dokumen untuk mengubah urutan.
+Sama seperti dokumen — hanya saja bukan di folder `pemberitahuan` tetapi di folder `vidio`
+Stepnya sama dengan upload file dokumen dan cara mendafatkannya di json harus sesuai 
 
 <a href="#daftar-isi" style="display:inline-block;margin-top:8px;font-size:13px;color:var(--vp-c-brand-1);text-decoration:none">↑ Kembali ke Daftar Isi</a>
 
@@ -129,10 +106,7 @@ Paste URL di browser untuk memastikan gambar muncul dengan benar sebelum update 
 
 ## Cara Menambahkan Menu di Setiap Role User
 
-::: info Coming Soon
-Bagian ini sedang disiapkan oleh **Ahmad Apriliyanto**.  
-Akan diisi setelah proses konfigurasi role selesai didokumentasikan.
-:::
+###
 
 <a href="#daftar-isi" style="display:inline-block;margin-top:8px;font-size:13px;color:var(--vp-c-brand-1);text-decoration:none">↑ Kembali ke Daftar Isi</a>
 

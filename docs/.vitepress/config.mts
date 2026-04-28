@@ -35,8 +35,8 @@ export default defineConfig({
       {
         text: 'Troubleshoot & Issue',
         items: [
-          { text: 'Anjungan', link: '/issues/anjungan' },
           { text: 'Smart', link: '/issues/smart' },
+          { text: 'Anjungan', link: '/issues/anjungan' },
         ],
       },
     ],
