@@ -26,10 +26,13 @@ export default defineConfig({
         text: 'Aplikasi',
         items: [
           { text: 'Daftar Aplikasi', link: '/apps/daftar-aplikasi' },
-          { text: 'Anjungan', link: '/apps/anjungan' },
           { text: 'Smart', link: '/apps/smart' },
-          { text: 'Flutter — Build & Deploy', link: '/apps/detail-flutter' },
-          { text: 'Update via SSH', link: '/apps/detail-ssh' },
+          { text: 'Anjungan', link: '/apps/anjungan' },
+          { text: 'Vedika', link: '/apps/vedika' },
+          { text: 'Daftar Online', link: '/apps/daftar-online' },
+          { text: 'Bridging / logistik', link: '/apps/bridging' },
+          { text: 'Dashboard', link: '/apps/dashboard' },
+         
         ],
       },
       {

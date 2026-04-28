@@ -14,7 +14,7 @@ Untuk `upload file` dan `upload vidio` tidak ada aksi pengkodingan apapun pada s
 - [Daftar Video & Cara Memperbarui via FStore](#daftar-video-cara-memperbarui-via-fstore)
 - [Gambar Homepage Smart](#gambar-homepage-smart)
 - [Cara Menambahkan Menu di Setiap Role User](#cara-menambahkan-menu-di-setiap-role-user)
-- [Ringkasan — Mana yang Perlu Diubah di FStore?](#ringkasan-mana-yang-perlu-diubah-di-fstore)
+- [Cara memberi akses user berdasarkan id pegawai/id login berdasarkan role di menu tertentu](#cara-memberi-akses-user-berdasarkan-id-pegawai-id-login-berdasarkan-role-di-menu-tertentu)
 
 ---
 
@@ -108,15 +108,70 @@ git pull //dari branch yang dikerjaan
 
 ---
 
-## Ringkasan — Mana yang Perlu Diubah di FStore?
+## Cara memberi akses user berdasarkan id pegawai/id login berdasarkan role di menu tertentu
+::: warning
+Perlu diketahui satu pegawai bisa memiliki beberapa role dalam sistem.
+Kemudian ada dua kondisi yang biasanya diterapkan yaitu:
+1. beri akses berdasarkan `id login` (kekurangnya jika pegawai tersebut login dengan role yang berbeda tidak akan bisa mengakses menu yang diberi kondisi)
+2. beri akses berdasarkan `id pegawai` (metode ini paling tepat untuk memberi akses kepada user)
+:::
 
-| Konten | Collection | Field Utama |
-|--------|-----------|-------------|
-| Dokumen | `smart_documents` | `file_url`, `title`, `is_active` |
-| Video | `smart_videos` | `video_url`, `thumbnail_url`, `order` |
-| Gambar Homepage | `smart_config` | `homepage_image` |
-| Konfigurasi Menu | *(coming soon)* | *(coming soon)* |
+### Cara memberi akses menu berdasarkan `id pegawai`
+1. buka controller menu yang dikerjakan
+2. gunakan kode berikut untuk seleksi role & `id pegawai`
+```javascript
+$scope.OnInit = () => {
+	var datapegawai = JSON.parse(window.localStorage.getItem('pegawai')); //mengambil data dari localstorage
+	var statusCode = ModelItem.getStatusUser(); // Untuk mengetahui role user
+	if (statusCode == "akuntansi") { // filtering menggunakan role
+		if (![932,1158,986,1102,23359,23360,395].includes(datapegawai['id'])) { //daftar id pegawai yang diberi akses
+			$scope.isAccessDanied(); //mengarahkan user ke homepage jika tidak memiliki akses
+		}
+	} else if (statusCode == "logistik") {
+		if (![1028].includes(datapegawai['id'])) {
+			$scope.isAccessDanied();
+		}
+	}
+}
 
+$scope.isAccessDanied = () => {
+	toastr.warning('OOps! Anda tidak memiliki akses disini', 'Warning');
+	setTimeout(() => {
+		$state.go('home')
+	}, 2000);
+}
+
+$scope.OnInit();
+```
+### Cara memberi akses menu berdasarkan `id login`
+1. buka controller menu yang dikerjakan
+2. jika ingin memberi kondisi berdasarkan `id login` sebagai berikut
+```javascript
+$scope.OnInit = () => {
+	var datauserlogin = JSON.parse(window.localStorage.getItem('datauserlogin')); //mengambil data dari localstorage
+	var statusCode = ModelItem.getStatusUser(); // Untuk mengetahui role user
+	if (statusCode == "akuntansi") { // filtering menggunakan role
+		if (![932,1158,986,1102,23359,23360,395].includes(datauserlogin['id'])) { //daftar id login yang diberi akses
+			$scope.isAccessDanied(); //mengarahkan user ke homepage jika tidak memiliki akses
+		}
+	} else if (statusCode == "logistik") {
+		if (![1028].includes(datauserlogin['id'])) {
+			$scope.isAccessDanied();
+		}
+	}
+}
+
+$scope.isAccessDanied = () => {
+	toastr.warning('OOps! Anda tidak memiliki akses disini', 'Warning');
+	setTimeout(() => {
+		$state.go('home')
+	}, 2000);
+}
+
+$scope.OnInit();
+```
+
+<a href="#daftar-isi" style="display:inline-block;margin-top:8px;font-size:13px;color:var(--vp-c-brand-1);text-decoration:none">↑ Kembali ke Daftar Isi</a>
 ---
 
 *Dibuat oleh Ahmad Apriliyanto — Frontend Programmer*

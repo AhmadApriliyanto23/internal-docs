@@ -29,7 +29,7 @@ features:
   - icon: 🐛
     title: Troubleshoot
     details: Panduan penyelesaian issue umum untuk aplikasi Anjungan dan Smart.
-    link: /issues/anjungan
+    link: /issues/smart
 ---
 
 ---

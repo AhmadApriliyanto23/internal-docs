@@ -6,11 +6,14 @@ Inventori lengkap seluruh aplikasi frontend yang dikelola tim.
 
 ## Semua Aplikasi
 
-| Aplikasi | Domain | Framework | Repository | SSH Remote | Status | Dokumentasi |
-|----------|--------|-----------|------------|------------|--------|-------------|
-| **Smart** | *(https://smart.rsabhk.co.id/)* | *(angular js)* | *(isi repo)* | *(isi SSH)* | Production | [Lihat →](/apps/smart) |
-| **Anjungan** | *(https://anjungan.rsabhk.co.id/)* | *(REACT18)* | *(isi repo)* | *(ssh://userdev@172.16.55.31:/volume1/git/new/fe-anjungan.git)* | Production | [Lihat →](/apps/anjungan) |
-| **Vedika** | *(https://vedika.rsabhk.co.id/)* | *(REACT18)* | *(isi repo)* | *(ssh://userdev@172.16.55.31:/volume1/git/fe-vedika.git)* | Production | [Lihat →](/apps/vedika) |
+| Aplikasi | Domain | Framework | SSH Remote | Branch | Status | Dokumentasi |
+|----------|--------|-----------|------------|--------|--------|-------------|
+| **Smart** | *(https://smart.rsabhk.co.id/)* | *(Angular js)* | *(isi SSH)* | master2 | Production |  [Lihat →](/apps/smart) |
+| **Anjungan** | *(https://anjungan.rsabhk.co.id/)* | *(React18)* | *(ssh://userdev@172.16.55.31:/volume1/git/new/fe-anjungan.git)* | master | Production | [Lihat →](/apps/anjungan) |
+| **Vedika** | *(https://vedika.rsabhk.co.id/)* | *(React18)* | *(ssh://userdev@172.16.55.31:/volume1/git/fe-vedika.git)* | master | Production | [Lihat →](/apps/vedika) |
+| **Daftar Online** | *(https://daftar.rsabhk.co.id/login)* | *(Angular 14)* | *(ssh://userdev@172.16.55.31:/volume1/git/new/fe-admindaftaronline.git)* | production | Production | [Lihat →](/apps/daftar-online) |
+| **Bridging / logistik** | *(https://bridge.rsabhk.co.id/)* | *(React18)* | *(ssh://userdev@172.16.55.31:/volume1/git/logistik-rsabhk.git)* | master | Production | [Lihat →](/apps/bridging) |
+| **Dashboard** | *(https://dashboard.rsabhk.co.id/)* | *(React18)* | *(ssh://userdev@172.16.55.31:/volume1/git/pelayanan/dashboard-pelayanan.git)* | master | Production | [Lihat →](/apps/dashboard) |
 ---
 
 ## Shortcut ke Dokumentasi Aplikasi
