@@ -11,24 +11,22 @@ Wiki ini adalah panduan teknis internal yang berisi seluruh informasi yang dibut
 
 Tujuannya agar setiap developer — baik yang baru bergabung maupun yang sudah lama — dapat bekerja secara mandiri tanpa harus bertanya satu per satu untuk hal-hal teknis yang berulang.
 
----
-
 ## Framework yang Digunakan
 
-### Flutter
-Digunakan sejak *(isi tahun)*. Dipilih karena mendukung pengembangan **cross-platform** (Android & iOS) dari satu codebase, sehingga menghemat waktu dan resource tim. Digunakan untuk aplikasi mobile yang didistribusikan melalui Google Play Store.
-
-### *(Tambahkan framework lain jika ada)*
-Isi penjelasan di sini.
-
----
+1. Angular JS - SMART
+2. Angular 14 - Daftar Online, Admin Daftar Online
+3. Flutter - Mobile RSABHK
+4. React JS - Vedika, Anjungan, Dashboard, Bridging, EIS, Viewer Content, Form Keluhan & Kepuasan
 
 ## Kenapa Memilih Framework Tersebut?
 
 | Framework | Alasan Pemilihan | Digunakan Sejak |
 |-----------|-----------------|-----------------|
-| Flutter   | Cross-platform, satu codebase untuk Android & iOS | *(tahun)* |
-| *(lainnya)* | *(alasan)* | *(tahun)* |
+| Angular JS | *(aplikasi existing sebelum saya datang)* | *(2016)* |
+| Angular 14 | Typescript, mengikuti jejak aplikasi sebelumnya agar linier | *(2022)* |
+| React JS | Mudah dipelajari, Komponen Resuable, Banyak pengembang, Stabil, Banyak penggiatnya di luar sehingga memudahkan programmer baru untuk lebih efektif dalam menangani pekerjaan | *(2023)* |
+| Flutter   | Cross-platform, satu codebase untuk Android & iOS | *(2024)* |
+
 
 ---
 

@@ -16,6 +16,13 @@ Inventori lengkap seluruh aplikasi frontend yang dikelola tim.
 | **Dashboard** | *(https://dashboard.rsabhk.co.id/)* | *(React18)* | *(ssh://userdev@172.16.55.31:/volume1/git/pelayanan/dashboard-pelayanan.git)* | master | Production | [Lihat →](/apps/dashboard) |
 ---
 
+## Global Depedencies
+### Cara instalasi GIT di perangkat
+### Cara instalasi dependencies
+1. Node.JS v22.11.0
+download node.js sesuai OS yang sedang dipakai. berikut link download node.js
+https://nodejs.org/en/blog/release/v22.11.0
+
 ## Shortcut ke Dokumentasi Aplikasi
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:16px">
@@ -33,7 +40,5 @@ Inventori lengkap seluruh aplikasi frontend yang dikelola tim.
 </a>
 
 </div>
-
----
 
 *Dibuat oleh Ahmad Apriliyanto — Frontend Programmer*
