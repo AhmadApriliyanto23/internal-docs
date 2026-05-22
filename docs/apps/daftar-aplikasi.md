@@ -19,7 +19,7 @@ Inventori lengkap seluruh aplikasi frontend yang dikelola tim.
 ## Global Depedencies
 ### Cara instalasi GIT di perangkat
 ### Cara instalasi dependencies
-1. Node.JS v22.11.0
+1. Node.JS v22.11.0 :
 download node.js sesuai OS yang sedang dipakai. berikut link download node.js
 https://nodejs.org/en/blog/release/v22.11.0
 

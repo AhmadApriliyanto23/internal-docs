@@ -40,6 +40,7 @@ export default defineConfig({
         items: [
           { text: 'Smart', link: '/issues/smart' },
           { text: 'Anjungan', link: '/issues/anjungan' },
+          { text: 'Chrome', link: '/issues/chrome' },
         ],
       },
     ],
