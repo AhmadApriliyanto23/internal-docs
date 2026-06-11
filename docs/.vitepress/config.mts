@@ -41,6 +41,7 @@ export default defineConfig({
           { text: 'Smart', link: '/issues/smart' },
           { text: 'Anjungan', link: '/issues/anjungan' },
           { text: 'Chrome', link: '/issues/chrome' },
+          { text: 'Docker Laravel', link: '/issues/docker-laravel-vite' },
         ],
       },
     ],
